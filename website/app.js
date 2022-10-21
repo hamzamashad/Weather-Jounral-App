@@ -104,10 +104,9 @@ const updateUI = async () => {
     const request = await fetch('/all');
     try{
         const allData = await request.json();
-        tempDisplay.innerText = allData[0].temperature;
-        dateDisplay.innerText = allData[0].date;
-        feelingsDisplay.innerText = allData[0].userResponse;
-  
+        tempDisplay.innerText = allData.temperature;
+        dateDisplay.innerText = allData.date;
+        feelingsDisplay.innerText = allData.userResponse;
     } catch(error) {
         console.log("error", error);
     }
