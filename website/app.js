@@ -1,5 +1,5 @@
 /* Global Variables */
-let baseURL = 'https://api.openweathermap.org/data/2.5/weather?lat=',
+const baseURL = 'https://api.openweathermap.org/data/2.5/weather?lat=',
 zipURL = 'http://api.openweathermap.org/geo/1.0/zip?zip='
 apiKey = 'd3fdaa4d0905b18d74f519c2150e4320';
 const zipArea = document.getElementById('zip'),
